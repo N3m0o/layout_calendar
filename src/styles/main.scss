@@ -1,4 +1,4 @@
-@import './variables';
+@import './main/variables';
 
 body {
   display: flex;
@@ -37,7 +37,7 @@ body {
   }
 
   &__day {
-    height: $calendar-day-hight;
+    height: $calendar-day-height;
     width: $calendar-day-width;
     background-color: #eee;
     box-sizing: inherit;
@@ -48,6 +48,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 30px;
     position: relative;
+    transition-duration: 0.5s;
 
     &::before {
       content: '';
